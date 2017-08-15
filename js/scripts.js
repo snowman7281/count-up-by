@@ -7,7 +7,7 @@ $(document).ready(function(){
     var result = [];
     console.log(countTo);
 
-    if(isNaN(countTo) || isNaN(countBy)){
+    if(isNaN(countTo) || isNaN(countBy) || countTo < 0 || countBy < 0 || countBy > countTo){
        $("span").show();
     }else{
       for(var i = 0; i <= countTo; i += countBy){
