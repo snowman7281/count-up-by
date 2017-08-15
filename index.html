@@ -10,19 +10,30 @@
   </head>
   <body>
     <div class="container">
+      <div class="page-header">
+        <h1>Let's Count!</h1>
+        <p>First, enter a number you would like to count to followed by the multiple we will use to get there (the increment we will count by).</p>
+      </div>
       <form id="counter" action="index.html" method="post">
         <div class="form-group">
           <label for="input1">Please enter a number to count:</label>
+          <br>
+          <span id="helpBlock"class="help-inline">*Please fill all fields.</span>
           <input id="input1" type="text"class="form-control" placeholder="Enter a number higher than 10.">
         </div>
 
         <div class="form-group">
           <label for="input2">Please enter a number to count by:</label>
+          <br>
+          <span id="helpBlock"class="help-inline">*Please fill all fields.</span>
           <input id="input2" type="text"class="form-control">
         </div>
 
         <button type="submit" class="btn btn-primary" name="button">Submit</button>
       </form>
+      <div id="output">
+        
+      </div>
     </div>
   </body>
 </html>
